@@ -1,0 +1,222 @@
+
+/* styles.css */
+
+/* Colores de la paleta sugerida */
+:root {
+    --color-azul-marino: #2C3E50;
+    --color-azul-claro: #3498DB;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #ECF0F1;
+    --color-verde-esmeralda: #2ECC71;
+    --color-naranja: #E67E22;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-gris-claro);
+    color: var(--color-azul-marino);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--color-azul-claro);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-verde-esmeralda);
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: var(--color-azul-marino);
+    color: var(--color-blanco);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--color-verde-esmeralda);
+}
+
+/* Banner */
+.banner {
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Secciones generales */
+section {
+    padding: 2rem 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-azul-marino);
+}
+
+/* Estilos específicos */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.highlight {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+.highlight h3 {
+    color: var(--color-azul-marino);
+    margin-bottom: 0.5rem;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.destinations article {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+form {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-azul-marino);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-gris-claro);
+    border-radius: 0.5rem;
+}
+
+form button {
+    background-color: var(--color-verde-esmeralda);
+    color: var(--color-blanco);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-azul-claro);
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--color-azul-marino);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 0.5rem;
+}
+
+.social-links a {
+    color: var(--color-blanco);
+}
+
+.social-links a:hover {
+    color: var(--color-verde-esmeralda);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
